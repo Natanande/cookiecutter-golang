@@ -22,9 +22,6 @@ jobs:
         env:
           GOPROXY: "https://proxy.golang.org"
         run: go test -v .
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
+
       - name: Deploy
         run: cat nginx-dep.yaml

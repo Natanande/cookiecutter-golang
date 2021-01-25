@@ -23,5 +23,3 @@ jobs:
           GOPROXY: "https://proxy.golang.org"
         run: go test -v .
 
-      - name: Deploy
-        run: cat nginx-dep.yaml

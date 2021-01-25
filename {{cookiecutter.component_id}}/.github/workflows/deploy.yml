@@ -1,0 +1,13 @@
+name: Deploy nginx app
+on: workflow_dispatch
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: self-hosted
+    steps:
+
+      - name: Check out source code
+        uses: actions/checkout@v1
+
+      - name: Deploy to Kubernetes
+        run: kubectl apply -f nginx-dep.yaml

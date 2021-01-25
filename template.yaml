@@ -80,3 +80,7 @@ spec:
           - circle
           - none
         default: github
+      k8s_deploy_name:
+        title: Deploy to Kubernetes
+        type: string
+        description: Unique name for the deployment name in k8s

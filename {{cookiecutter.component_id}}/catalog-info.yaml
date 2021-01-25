@@ -8,6 +8,9 @@ metadata:
 {%- if cookiecutter.use_ci == "github" %}
     backstage.io/github-actions-id: {{cookiecutter.storePath}}
 {%- endif %}
+{%- if cookiecutter.k8s_deploy_name %}
+backstage.io/kubernetes-id: {{cookiecutter.storePath}}
+{%- endif %}
 spec:
   type: service
   lifecycle: experimental

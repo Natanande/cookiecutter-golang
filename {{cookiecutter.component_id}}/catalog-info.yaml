@@ -9,7 +9,7 @@ metadata:
     backstage.io/github-actions-id: {{cookiecutter.storePath}}
 {%- endif %}
 {%- if cookiecutter.k8s_deploy_name %}
-    backstage.io/kubernetes-id: {{cookiecutter.storePath}}
+    backstage.io/kubernetes-id: {{cookiecutter.component_id}}
 {%- endif %}
 spec:
   type: service
